@@ -1,7 +1,7 @@
 spring:
-  application.name: spring-vault-kv
+  application.name: xxxxx
   config:
-    import: vault://
+    import: vault://secret/local/spring-vault-kv
   cloud:
     vault:
       uri: http://0.0.0.0:8200

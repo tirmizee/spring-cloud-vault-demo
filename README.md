@@ -34,8 +34,23 @@ public ApplicationRunner applicationRunner(
 
 ```
 
-### tag v2
+### v2 branch
 
-
+```yaml
+spring:
+  application.name: xxxxx
+  config:
+    import: vault://secret/spring-vault-kv
+  cloud:
+    vault:
+      uri: http://0.0.0.0:8200
+      connection-timeout: 5000
+      read-timeout: 15000
+      authentication: TOKEN
+      token: ${VAULT_TOKEN}
+logging:
+  level:
+    org.springframework.cloud.vault: DEBUG
+```
 
 ### tag v3
