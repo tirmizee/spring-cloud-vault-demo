@@ -53,4 +53,3 @@ logging:
     org.springframework.cloud.vault: DEBUG
 ```
 
-### tag v3
